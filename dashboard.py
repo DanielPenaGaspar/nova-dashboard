@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import principal as pr
@@ -6,23 +7,14 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Predicción de precios", layout="wide")
 
 # =====================================
-# Botón para regresar al sitio web
+# Título + instrucción de regreso
 # =====================================
-col_nav, col_title = st.columns([1,6])
+st.title("Predicción de precios de mercado")
 
-with col_nav:
-    st.markdown(
-        '<a href="https://novapredict.netlify.app/" target="_top">'
-        '<button style="padding:10px 20px; font-size:16px;">Inicio</button>'
-        '</a>',
-        unsafe_allow_html=True
-    )
-
-with col_title:
-    st.title("Predicción de precios de mercado")
+st.info("Para regresar a la página principal, utiliza el botón 'Atrás' de tu navegador.")
 
 # ============================
-# Sidebar
+# Sidebar=====================
 # ============================
 st.sidebar.header("Configuración")
 
