@@ -12,7 +12,7 @@ col_nav, col_title = st.columns([1,6])
 
 with col_nav:
     st.markdown(
-        '<a href="http://localhost:8080/nova/index.html" target="_top">'
+        '<a href="https://novapredict.netlify.app/" target="_top">'
         '<button style="padding:10px 20px; font-size:16px;">Inicio</button>'
         '</a>',
         unsafe_allow_html=True
